@@ -3,9 +3,239 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUPAR GOLF</title>
+  <title>SUPAR GOLF — Los Angeles Premier Golf Simulator Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>SUPAR GOLF - Coming Soon</h1>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="/" class="header__logo">SUPAR GOLF</a>
+      <nav class="header__nav">
+        <a href="#membership">Membership & Rates</a>
+        <a href="#simulators">Simulators</a>
+        <a href="#studio">Game Room & Bay</a>
+        <a href="#events">Events</a>
+      </nav>
+      <a href="#booking" class="btn btn--gold">Book Now</a>
+      <button class="header__hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#membership">Membership & Rates</a>
+      <a href="#simulators">Simulators</a>
+      <a href="#studio">Game Room & Bay</a>
+      <a href="#events">Events</a>
+      <a href="#booking" class="btn btn--gold">Book Now</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container hero__content">
+      <span class="hero__badge">Los Angeles premier studio</span>
+      <h1 class="hero__title">The art of<br>Precision.</h1>
+      <div class="hero__actions">
+        <a href="#membership" class="btn btn--gold">Start a membership</a>
+        <a href="#booking" class="btn btn--outline">Book a tee time</a>
+      </div>
+    </div>
+    <div class="hero__location">
+      <div class="hero__location-item">
+        <span class="hero__location-label">Location</span>
+        <span class="hero__location-value">3980 Wilshire Blvd</span>
+      </div>
+      <div class="hero__location-divider"></div>
+      <div class="hero__location-item">
+        <span class="hero__location-label">Contact</span>
+        <span class="hero__location-value">(213) 277-5683</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="container features__grid">
+
+      <div class="feature-card">
+        <div class="feature-card__img feature-card__img--tech"></div>
+        <div class="feature-card__body">
+          <span class="feature-card__number">01</span>
+          <h3 class="feature-card__title">Device & Technology</h3>
+          <p class="feature-card__desc">Train and play on SUPAR's complete simulator lineup: Golfzon TwoVision NX, Golfzon GDR MAX, and Foresight QuadMAX.</p>
+          <a href="#simulators" class="feature-card__link">Explore technology <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card__img feature-card__img--studio"></div>
+        <div class="feature-card__body">
+          <span class="feature-card__number">02</span>
+          <h3 class="feature-card__title">Private Rooms & Open Bays</h3>
+          <p class="feature-card__desc">Choose immersive private-room gameplay or open-bay practice and coaching, each built around purpose-fit technology.</p>
+          <a href="#studio" class="feature-card__link">See studio spaces <span>→</span></a>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card__img feature-card__img--membership"></div>
+        <div class="feature-card__body">
+          <span class="feature-card__number">03</span>
+          <h3 class="feature-card__title">Membership Program</h3>
+          <p class="feature-card__desc">Get dedicated monthly simulator hours, priority booking, and better value than standard walk-in rates.</p>
+          <a href="#membership" class="feature-card__link">View membership & rates <span>→</span></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SIMULATORS -->
+  <section class="simulators" id="simulators">
+    <div class="container simulators__inner">
+      <div class="simulators__text">
+        <span class="section-label">Device & Technology</span>
+        <h2 class="section-title">All-New Simulators</h2>
+        <p class="section-desc">SUPAR features all-new simulators from Golfzon and Foresight, including TwoVision NX, GDR MAX, and QuadMAX — built for immersive play and purposeful practice.</p>
+        <a href="#simulators" class="btn btn--gold">Explore more</a>
+      </div>
+      <div class="simulators__visual">
+        <div class="simulators__img-placeholder">
+          <span>Simulator Showcase</span>
+        </div>
+        <div class="simulators__tags">
+          <span class="sim-tag">Golfzon TwoVision NX</span>
+          <span class="sim-tag">Golfzon GDR MAX</span>
+          <span class="sim-tag">Foresight QuadMAX</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP -->
+  <section class="membership" id="membership">
+    <div class="container">
+      <div class="membership__header">
+        <span class="section-label">Join the club</span>
+        <h2 class="section-title">Membership tiers</h2>
+      </div>
+      <div class="membership__grid">
+
+        <div class="tier-card tier-card--active">
+          <div class="tier-card__top">
+            <h3 class="tier-card__name">Morning</h3>
+            <div class="tier-card__price">
+              <span class="tier-card__amount">$300</span>
+              <span class="tier-card__period">/mo</span>
+            </div>
+          </div>
+          <ul class="tier-card__features">
+            <li>10 hours (tickets) per month</li>
+            <li>Usable any time during the month</li>
+            <li>Access to all simulator types</li>
+            <li>Priority booking</li>
+          </ul>
+          <a href="#booking" class="btn btn--gold tier-card__cta">Start a membership</a>
+        </div>
+
+        <div class="tier-card tier-card--soon">
+          <div class="tier-card__soon-badge">Coming soon</div>
+          <div class="tier-card__top">
+            <h3 class="tier-card__name">All-Day</h3>
+            <div class="tier-card__price">
+              <span class="tier-card__amount">—</span>
+            </div>
+          </div>
+          <ul class="tier-card__features">
+            <li>Extended hours</li>
+            <li>Additional perks</li>
+            <li>Details coming soon</li>
+          </ul>
+          <button class="btn btn--outline tier-card__cta" disabled>Coming Soon</button>
+        </div>
+
+        <div class="tier-card tier-card--soon">
+          <div class="tier-card__soon-badge">Coming soon</div>
+          <div class="tier-card__top">
+            <h3 class="tier-card__name">Unlimited</h3>
+            <div class="tier-card__price">
+              <span class="tier-card__amount">—</span>
+            </div>
+          </div>
+          <ul class="tier-card__features">
+            <li>Maximum flexibility</li>
+            <li>Premium benefits</li>
+            <li>Details coming soon</li>
+          </ul>
+          <button class="btn btn--outline tier-card__cta" disabled>Coming Soon</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location" id="location">
+    <div class="container location__inner">
+      <div class="location__info">
+        <span class="section-label">Visit us</span>
+        <h2 class="section-title">Location & access</h2>
+        <div class="location__details">
+          <div class="location__detail-item">
+            <span class="location__detail-label">Address</span>
+            <span class="location__detail-value">3980 Wilshire Blvd Ste C2<br>Los Angeles, CA 90010</span>
+          </div>
+          <div class="location__detail-item">
+            <span class="location__detail-label">Phone</span>
+            <span class="location__detail-value">(213) 277-5683</span>
+          </div>
+          <div class="location__detail-item">
+            <span class="location__detail-label">Email</span>
+            <span class="location__detail-value">supargolfstudio@gmail.com</span>
+          </div>
+          <div class="location__detail-item">
+            <span class="location__detail-label">Hours</span>
+            <span class="location__detail-value">Mon – Fri &nbsp; 9:00 AM – 10:00 PM<br>Sat – Sun &nbsp; 9:00 AM – 10:00 PM</span>
+          </div>
+        </div>
+        <a href="https://maps.google.com/?q=3980+Wilshire+Blvd+Ste+C2+Los+Angeles+CA+90010" target="_blank" class="btn btn--gold">Get directions</a>
+      </div>
+      <div class="location__map">
+        <div class="location__map-placeholder">
+          <span>Map</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo">SUPAR GOLF</a>
+        <p class="footer__tagline">Los Angeles premier golf simulator studio.</p>
+      </div>
+      <nav class="footer__nav">
+        <a href="#membership">Membership & Rates</a>
+        <a href="#simulators">Studio & Tech</a>
+        <a href="#booking">Book Now</a>
+        <a href="#studio">Game Room & Bay</a>
+        <a href="#events">Events</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 SUPAR GOLF. All rights reserved.</span>
+      <a href="#privacy">Privacy policy</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
